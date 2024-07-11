@@ -1,0 +1,18 @@
+import java.util.*;
+public class swamy {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6};
+        int t=10;
+        HashSet<Integer>mp=new HashSet<>();
+        for(int i=0;i<a.length;i++){
+            int kon=t-a[i];
+            if(mp.contains(kon)){
+                System.out.println("pair found"+a[i]+" "+kon);
+                break;
+            }
+else{
+    mp.add(a[i]);
+}
+    }
+    
+}}
